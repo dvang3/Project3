@@ -17,32 +17,26 @@
           <h1>California Crash Data Dashboard</h1>
           <h3>by Anna Marie Estores and Dia Vang</h2>
             <hr>
-            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
             <script>
-              const chart_data = {{ data| tojson}}
-              chart_data2 = {{ data2 | tojson }}
-              chart_data3 = {{ data3 | tojson }}
-              console.log(chart_data, chart_data2, chart_data3)
+              const chart_data = {{data|tojson}}
+              console.log(chart_data)
             </script>
+            
             <canvas id="myChart" width="400" height="400"></canvas>
-            <form action="/">
-              <label for="data">Report Type:</label>
-              <select name="county" id="county">
-                <option chart_data="crash_by_city">crash by city</option>
-                <option chart_data2="fatal_crashes">Fatal crashes</option>
-                <option chart_data3="fatal_crashes_by_month">Monthly fatal crashere</option>
-              </select id="selDataset" onchange="optionChanged(this.chart_data,chart_data2, chart_data3)"></select>
-              <br><br>
+            <form>
+              <label for="county">County: </label>
+              <input type="text" name="county"  required>
+              <br>
               <input type="submit" value="Submit">
-            </form>
-            <p>Click the "Submit" button and the form-data will populate".</p>
+          </form>
+              </select id="myForm" onchange="optionChanged(this.resultdata)"></select>
+              <br><br>
+            <p>Click the "Submit" button to create chart data.</p>
             <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
-            <div>
-              <canvas id="myChart"></canvas>
-            </div>
-
-            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-              <script>
+            <div id="plot"></div>
+            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+            <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+              <!-- <script>
                 const ctx = document.getElementById('myChart');
                 new Chart(ctx, {
     type: 'bar',
@@ -62,7 +56,7 @@
       }
     }
   });
-</script>
+</script> -->
             </div>
         </div>
       </div>
@@ -71,26 +65,17 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"></script>
 </body>
-</script>
+<!-- <script src="/Users/annamarieestores/Documents/Project3/flask_blog/static/js/logic.js"></script>
+<script src="/Users/annamarieestores/Documents/Project3/flask_blog/static/js/data.js"></script> -->
 </div>
 <div id="sample-metadata" class="panel-body"></div>
 </div>
-</div>
 <div class="col-md-5">
   <div id="bar"></div>
-</div>
-<div class="col-md-5">
-  <div id="gauge"></div>
-</div>
-</div>
-<div class="row">
-  <div class="col-md-12">
-    <div id="bubble"></div>
   </div>
 </div>
 </div>
-<script src="https://d3js.org/d3.v7.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="/static/js/logic.js"></script>
+<!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
+
 
 </html>

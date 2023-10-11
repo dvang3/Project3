@@ -1,0 +1,60 @@
+county,total_fatal_crashes,total_injury_crashes,alcohol_involved_fatal,alcohol_involved_injury
+Alameda,90,"7,905",28,655
+Alpine,2,33,0,4
+Amador,13,196,4,38
+Butte,33,920,9,143
+Calaveras,10,226,4,45
+Colusa,9,142,1,21
+Contra Costa,69,"4,353",27,492
+Del Norte,8,139,1,19
+El Dorado,27,615,11,103
+Fresno,122,"2,669",34,305
+Glenn,5,105,1,15
+Humboldt,20,574,14,100
+Imperial,29,522,7,60
+Inyo,9,100,1,10
+Kern,138,"3,721",48,435
+Kings,13,558,6,78
+Lake,15,271,5,55
+Lassen,6,93,0,15
+Los Angeles,683,"60,183",202,"4,784"
+Madera,35,658,9,100
+Marin,20,"1,018",7,109
+Mariposa,4,70,2,8
+Mendocino,21,375,9,73
+Merced,47,"1,448",13,183
+Modoc,6,51,0,4
+Mono,5,58,2,7
+Monterey,32,"1,925",14,287
+Napa,17,742,5,100
+Nevada,10,396,2,71
+Orange,164,"12,230",61,"1,138"
+Placer,24,"1,565",7,180
+Plumas,3,114,1,30
+Riverside,269,"10,109",101,"1,077"
+Sacramento,164,"8,602",48,819
+San Benito,11,279,4,28
+San Bernardino,302,"10,811",96,"1,156"
+San Diego,239,"14,084",80,"1,714"
+San Francisco,34,"3,926",4,359
+San Joaquin,111,"4,220",31,478
+San Luis Obispo,31,"1,043",11,137
+San Mateo,27,"2,953",5,305
+Santa Barbara,33,"1,785",9,246
+Santa Clara,124,"7,621",34,769
+Santa Cruz,19,"1,136",7,206
+Shasta,34,747,12,87
+Sierra,3,32,0,7
+Siskiyou,9,241,1,32
+Solano,43,"1,911",12,169
+Sonoma,36,"2,261",11,308
+Stanislaus,63,"3,134",23,362
+Sutter,22,513,6,54
+Tehama,15,264,6,45
+Trinity,8,84,3,14
+Tulare,60,"1,910",19,240
+Tuolumne,12,389,5,65
+Ventura,43,"3,862",13,404
+Yolo,24,962,8,91
+Yuba,13,357,3,41
+Statewide Total,"3,438","187,211","1,087","18,880"
