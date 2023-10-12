@@ -3,12 +3,13 @@ import pandas as pd
 import sqlite3
 
 from flask import Flask, render_template 
+import json
 #################################################
 # Flask Setup
 #################################################
 app = Flask(__name__)
 
-conn = sqlite3.connect('/Users/annamarieestores/Documents/Project3/flask_blog/Resources/proj3.sqlite')
+conn = sqlite3.connect('flask_blog/Resources/proj3.sqlite')
 c = conn.cursor()
 data = c.execute('''SELECT * FROM crash_data''').fetchall() 
 #################################################

@@ -1,4 +1,4 @@
-d3.csv("flask_blog/Resources/crash_data.csv", function(chart_data) {
+d3.csv("../Resources/crash_data.csv", function(chart_data) {
     
     d3.select("body")
         .selectAll("p")
@@ -27,6 +27,10 @@ for (let i = 0; i < chart_data.length; i++) {
   alcohol_involved_fatal.push(row.alcohol_involved_fatal);
   alcohol_involved_injury.push(row.alcohol_involved_injury);
 };
+console.log(county)
+console.log(total_fatal_crashes)
+console.log(total_injury_crashes)
+
 
 // Trace1 for the Greek Data
 let trace1 = {
@@ -77,6 +81,8 @@ let layout = {
     pad: 4
   }
 };
+Plotly.newPlot("plot", chart_data, layout);
+
 function handleSubmit(event) {
   event.preventDefault();
 
@@ -88,9 +94,9 @@ function handleSubmit(event) {
   console.log({ value });
 }
 
-const form = document.querySelector('form');
-form.addEventListener('submit', handleSubmit);
-// Render the plot to the div tag with id "plot"
-Plotly.newPlot("plot", chart_data, layout);
+// const form = document.querySelector('form');
+// form.addEventListener('submit', handleSubmit);
+// // Render the plot to the div tag with id "plot"
+// Plotly.newPlot("plot", chart_data, layout);
 
 
