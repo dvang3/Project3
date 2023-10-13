@@ -17,7 +17,6 @@ data = c.execute('''SELECT * FROM crash_data''').fetchall()
 #################################################
 @app.route("/")
 def welcome():
-
     return render_template ('index.html', data=data)
     
 if __name__ == '__main__':
