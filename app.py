@@ -9,7 +9,7 @@ import json
 #################################################
 app = Flask(__name__)
 
-conn = sqlite3.connect('flask_blog/Resources/proj3.sqlite')
+conn = sqlite3.connect('static/Resources/proj3.sqlite')
 c = conn.cursor()
 data = c.execute('''SELECT * FROM crash_data''').fetchall() 
 #################################################
